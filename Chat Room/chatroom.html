@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title> </title>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"> </script>
+   		<script type="text/javascript" src="chatRoom.js"></script>
+   		<link rel="stylesheet" type="text/css" href="chatroom.css" />
+	</head>
+	<body>
+		<h1 id="roomId"> </h1>
+		<div id="outer">
+			<div id="wrapper">
+				<ul id="currentMessages">
+				</ul>
+				
+				<form method="POST" action="/{{roomName}}/messages" id="messageForm">
+			    <textarea type="text" name="message" id="messageField"> Type your message here! </textarea>
+			    <br>
+			    <p> name: <input type="text" name="nickname" id="nicknameField" value=""> </input>
+			    <input type="submit" value="Send">
+			</P>
+				</form>
+			</div>
+			
+		</div>
+
+		<div id="home">
+			<a href = "/"> < Go home</a>
+		</div>
+
+
+	</body>
+
+</html>
